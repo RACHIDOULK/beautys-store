@@ -20,6 +20,15 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Admin product management
+
+The admin API verifies the signed-in user's email on the server and uses the Supabase service-role key only on the server. Configure these server-side environment variables locally and on the hosting platform:
+
+- `ADMIN_EMAIL`: email address allowed to use the admin page.
+- `SUPABASE_SERVICE_ROLE_KEY`: Supabase service-role key. Never expose it with a `NEXT_PUBLIC_` prefix or commit its value.
+
+Before enabling product management, apply `supabase/migrations/20261128140302_restrict_product_writes.sql` to the Supabase project. This prevents browser clients from writing directly to the products table; authorized inserts go through the server API.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
