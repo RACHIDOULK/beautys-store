@@ -32,6 +32,9 @@ export default function ForgotPasswordPage() {
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
       <div className="max-w-md w-full bg-white rounded-2xl shadow-sm p-8">
         <div className="text-center mb-8">
+          <div className="mb-8">
+            <img src="/logo.png.jpg" alt="Beautys Morocco" className="h-16 w-auto object-contain mx-auto" />
+          </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">نسيت كلمة المرور؟</h1>
           <p className="text-gray-500 text-sm">أدخل بريدك الإلكتروني وسنرسل لك رابطاً لإعادة تعيينها.</p>
         </div>
