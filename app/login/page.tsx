@@ -33,8 +33,12 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center pt-12 px-4">
       
-      <div className="mb-8">
-        <img src="/logo.png.jpg" alt="Beautys Morocco" className="h-16 w-auto object-contain mx-auto" />
+      <div className="mb-8 flex justify-center">
+        <img
+          src="/logo.png"
+          alt="Beautys Morocco"
+          className="h-20 w-auto object-contain mix-blend-multiply"
+        />
       </div>
 
       <div className="max-w-md w-full">
@@ -94,7 +98,7 @@ export default function LoginPage() {
         </div>
 
         <div className="mt-8 text-center text-sm text-gray-600 border-t border-gray-200 pt-6">
-          <p>L'ouverture d'un compte est réservée aux personnes âgées de 16 ans et plus.</p>
+          <p>L&apos;ouverture d&apos;un compte est réservée aux personnes âgées de 16 ans et plus.</p>
           <button 
             onClick={() => { setIsLogin(!isLogin); setMessage(""); }}
             className="mt-4 text-black font-bold hover:underline"

@@ -57,8 +57,12 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ s
 
       <header className="border-b border-gray-100">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
-          <Link href="/">
-            <img src="/logo.png.jpg" alt="Beautys Morocco" className="h-10 w-auto object-contain cursor-pointer" />
+          <Link href="/" className="flex-shrink-0">
+            <img
+              src="/logo.png"
+              alt="Beautys Morocco"
+              className="h-10 md:h-12 w-auto object-contain mix-blend-multiply transition-transform hover:scale-105"
+            />
           </Link>
 
           <form action="/" className="flex-1 max-w-xl relative hidden md:block">
