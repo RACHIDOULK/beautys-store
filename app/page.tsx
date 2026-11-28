@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Search, Heart } from "lucide-react";
 import HeroBanner from "@/components/HeroBanner";
 import ProductCard from "@/components/ProductCard";
@@ -58,9 +59,11 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ s
       <header className="border-b border-gray-100">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
           <Link href="/" className="flex-shrink-0">
-            <img
+            <Image
               src="/logo.png"
               alt="Beautys Morocco"
+              width={246}
+              height={93}
               className="h-10 md:h-12 w-auto object-contain mix-blend-multiply transition-transform hover:scale-105"
             />
           </Link>

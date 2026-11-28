@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function LoginPage() {
@@ -34,9 +35,11 @@ export default function LoginPage() {
     <div className="min-h-screen bg-white flex flex-col items-center pt-12 px-4">
       
       <div className="mb-8 flex justify-center">
-        <img
+        <Image
           src="/logo.png"
           alt="Beautys Morocco"
+          width={246}
+          height={93}
           className="h-20 w-auto object-contain mix-blend-multiply"
         />
       </div>
