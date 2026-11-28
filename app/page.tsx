@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Search, Heart } from "lucide-react";
 import HeroBanner from "@/components/HeroBanner";
 import ProductCard from "@/components/ProductCard";
@@ -58,14 +57,13 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ s
 
       <header className="border-b border-gray-100">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
-          <Link href="/" className="flex-shrink-0">
-            <Image
-              src="/logo.png"
-              alt="Beautys Morocco"
-              width={246}
-              height={93}
-              className="h-10 md:h-12 w-auto object-contain mix-blend-multiply transition-transform hover:scale-105"
-            />
+          <Link href="/" className="flex flex-col items-center justify-center group">
+            <span className="font-[family-name:var(--font-el-messiri)] text-[#0c1f1c] text-3xl font-semibold tracking-wider leading-none group-hover:scale-105 transition-transform">
+              BEAUTYS
+            </span>
+            <span className="font-[family-name:var(--font-el-messiri)] text-[#0c1f1c] text-sm font-medium tracking-[0.4em] leading-none mt-1 ml-1">
+              MOROCCO
+            </span>
           </Link>
 
           <form action="/" className="flex-1 max-w-xl relative hidden md:block">
